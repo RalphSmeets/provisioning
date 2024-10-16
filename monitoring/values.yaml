@@ -3570,7 +3570,7 @@ prometheus:
 
     ## External URL at which Prometheus will be reachable.
     ##
-    externalUrl: "http://monitoring.pro.k8s-frambozen.nl"
+    externalUrl: "http://monitoring.pro.k8s-frambozen.nl/prometheus"
 
     ## Define which Nodes the Pods are scheduled on.
     ## ref: https://kubernetes.io/docs/user-guide/node-selection/
