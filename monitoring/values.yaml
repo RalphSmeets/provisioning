@@ -989,6 +989,12 @@ grafana:
     ##
     pspEnabled: false
 
+  grafana.ini:
+    server:
+      domain: monitoring.pro.k8s-frambozen.net
+      root_url: http://monitoring.pro.k8s-frambozen.net/grafana
+      serve_from_sub_path: true
+      
   ingress:
     ## If true, Grafana Ingress will be created
     ##
