@@ -1454,7 +1454,7 @@ extraObjects:
       name: cloudflare-token-secret
     type: Opaque
     stringData:
-      cloudflare-token: "<path:/k3s-provisioning/pro/applications/cert-manager#cloudflare-token>"
+      cloudflare-token: "<path:/k8s-provisioning/pro/applications/cert-manager#cloudflare-token>"
   - |
     ---
     apiVersion: cert-manager.io/v1
