@@ -1,4 +1,4 @@
 chart:
   repo_url: https://ralphsmeets.github.io/trusted-helm-charts
   name: cert-manager
-  version: v1.12.13
+  version: v1.16.1
