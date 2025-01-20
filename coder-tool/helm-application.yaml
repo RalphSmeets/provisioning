@@ -1,0 +1,4 @@
+chart:
+  repo_url: https://helm.coder.com/v2
+  name: coder
+  version: 2.18.0
