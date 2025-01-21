@@ -1,4 +1,4 @@
 chart:
-  repo_url: oci://registry-1.docker.io/bitnamicharts/postgresql
+  repo_url: https://charts.bitnami.com/bitnami
   name: postgresql
   version: 16.4.5
