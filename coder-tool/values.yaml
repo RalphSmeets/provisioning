@@ -10,13 +10,25 @@ coder:
   # they are already set by the Helm chart and will cause conflicts.
   env:
     - name: CODER_PG_CONNECTION_URL
-      value: "postgres://coder:coder@coder-db-postgresql.coder-db-tool.svc.cluster.local:5432/coder?sslmode=disable"
+      value: "postgres://coder:coder@coder-db-tool-postgresql.coder-db-tool.svc.cluster.local:5432/coder?sslmode=disable"
 
     # (Optional) For production deployments the access URL should be set.
     # If you're just trying Coder, access the dashboard via the service IP.
     - name: CODER_ACCESS_URL
       value: "https://coder.pro.k8s-frambozen.nl"
 
+  ingress:
+    enable: true
+    host: "coder.pro.k8s-frambozen.nl"
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      traefik.ingress.kubernetes.io/router.tls: "true"
+      kubernetes.io/ingress.class: "traefik"
+      cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    tls:
+      enabled: true
+      secretName: coder-tls-prod-cert
+      
   #tls:
   #  secretNames:
   #    - my-tls-secret-name
