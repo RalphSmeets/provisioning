@@ -17,6 +17,9 @@ coder:
     - name: CODER_ACCESS_URL
       value: "https://coder.pro.k8s-frambozen.nl"
 
+  service:
+    type: ClusterIP
+    
   ingress:
     enable: true
     host: "coder.pro.k8s-frambozen.nl"
@@ -29,6 +32,4 @@ coder:
       enabled: true
       secretName: coder-tls-prod-cert
       
-  #tls:
-  #  secretNames:
-  #    - my-tls-secret-name
+  
