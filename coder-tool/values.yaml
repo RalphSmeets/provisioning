@@ -29,7 +29,7 @@ coder:
       kubernetes.io/ingress.class: "traefik"
       cert-manager.io/cluster-issuer: "letsencrypt-prod"
     tls:
-      enabled: true
+      enable: true
       secretName: coder-tls-prod-cert
       
   
