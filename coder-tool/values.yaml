@@ -20,9 +20,6 @@ coder:
   service:
     type: ClusterIP
 
-  tls:
-    enabled: true
-    
   ingress:
     enable: true
     host: "coder.k8s-frambozen.nl"
