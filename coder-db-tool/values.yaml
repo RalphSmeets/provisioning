@@ -5,9 +5,9 @@ auth:
 
 primary:
   livenessProbe:
-    initialDelaySeconds: 120
+    initialDelaySeconds: 150
   readinessProbe:
-    initialDelaySeconds: 5
+    initialDelaySeconds: 30
   persistentVolumeClaimRetentionPolicy:
     whenDeleted: Delete
   persistence:
