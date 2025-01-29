@@ -4,6 +4,8 @@ auth:
   database: coder
 
 primary:
+  persistentVolumeClaimRetentionPolicy:
+    whenDeleted: Delete
   persistence:
     size: 10Gi
   
