@@ -4,6 +4,10 @@ auth:
   database: coder
 
 primary:
+  livenessProbe:
+    initialDelaySeconds: 300
+  readinessProbe:
+    initialDelaySeconds: 300
   persistentVolumeClaimRetentionPolicy:
     whenDeleted: Delete
   persistence:
