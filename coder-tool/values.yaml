@@ -17,8 +17,8 @@ coder:
     - name: CODER_ACCESS_URL
       value: "https://coder.k8s-frambozen.nl"
 
-    - name: CODER_TLS_ADDRESS
-      value: "0.0.0.0:8443"
+    #- name: CODER_TLS_ADDRESS
+    #  value: "0.0.0.0:8443"
 
   service:
     type: ClusterIP
@@ -27,13 +27,13 @@ coder:
     enable: true
     host: "coder.k8s-frambozen.nl"
     className: "traefik"
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      traefik.ingress.kubernetes.io/router.tls: "true"
-      kubernetes.io/ingress.class: "traefik"
-      cert-manager.io/cluster-issuer: "letsencrypt-prod"
-    tls:
-      enable: true
-      secretName: coder-tls-prod-cert
+    #annotations:
+    #  traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    #  traefik.ingress.kubernetes.io/router.tls: "true"
+    #  kubernetes.io/ingress.class: "traefik"
+    #  cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    #tls:
+    #  enable: true
+    #  secretName: coder-tls-prod-cert
       
   
