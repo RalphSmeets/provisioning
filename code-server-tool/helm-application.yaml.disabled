@@ -1,4 +1,0 @@
-chart:
-  repo_url: https://github.com/coder/code-server/tree/main/ci/helm-chart
-  name: code-server
-  version: 3.25.2
