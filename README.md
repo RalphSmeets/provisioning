@@ -1,2 +1,2 @@
-# pro-provisioning
-Production K3S cluster provisioning
+# provisioning
+K3S cluster provisioning
